@@ -7,7 +7,7 @@ export default function Home() {
   const { user } = useAuth();
   return (
     <>
-        {!user.uid &&
+        {!user.uid ?
             <div className="login-section">
                 <div className="container">
                     <div className="section-wrap">
@@ -21,8 +21,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-        }
-        {user.uid &&
+            :
             <div className="home-page">
                 <Header />
                 <StatusSection />

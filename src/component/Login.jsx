@@ -13,8 +13,10 @@ const Login = () => {
     setSignupAccount(true);
   }
   const { logIn } = useAuth();
-const router = useRouter();
+  const router = useRouter();
+
   const methods = useForm({ mode: "onBlur" });
+  
   const {
     register,
     handleSubmit,
