@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link';
 import { useState } from 'react';
-import StatusForm from '../StatusForm';
+import StatusSectionForm from './statusForm';
+
 const StatusSection = () => {
   const [statusOn, setStatusOn] = useState(false);
   const statusOnModal = () =>{
@@ -15,13 +16,10 @@ const StatusSection = () => {
                     <Image src="" alt="" width={40} height={40}/>
                 </Link>
             </figure>
-            <div className='status-upload' onClick={statusOnModal}></div>
+            <div className='status-upload' onClick={statusOnModal}>What's on your mind ?</div>
         </div>
         {statusOn && 
-            <div>
-                <div className='close' onClick={()=>setStatusOn(false)} />
-                <StatusForm />
-            </div>
+            <StatusSectionForm setStatusOn={setStatusOn}/>
         }
     </>
   )

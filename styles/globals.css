@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    margin:0;
+    padding:0;
+    background-color: #f0f2f5;
+}
+.login-section .section-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.login-section .section-wrap > div{
+    width: 50%;
+    padding:100px 15px;
+}
+.login-section .login-form{
+    background-color: #fff;
+    padding:30px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 396px;
+}
+.login-form input,
+.signup input{
+    width: 100%;
+    font-size: 17px;
+    padding: 14px 16px;
+    margin-bottom:15px;
+}
+.login-form input + p,
+.signup input + p{
+    margin-bottom:15px;
+    margin-top:-10px;
+    color:red;
+    text-align: left;
+}
+input[type=submit]{
+    cursor: pointer;
+    background-color: #1877f2;
+    border:0;
+    color:#fff;
+    border-radius: 10px;
+}
+.brand-link{
+    display: inline-block;
+    color:#1877f2;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom:15px;
+}
+.create-account-btn-wrap a{
+    background-color: #42b72a;
+    display: inline-block;
+    font-size: 17px;
+    padding: 14px 25px;
+    border-radius: 15px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.form-signup{
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    background-color: rgba(0, 0, 0,0.7);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-signup .icon-close{
+    position:absolute;
+    top:15px;
+    right:15px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: red;
+    padding:5px 10px;
+    border-radius: 10px;
+}
+.form-signup form{
+    max-width: 320px;
+    background-color: #fff;
+    padding:30px;
+    border-radius: 15px;
+    text-align: center;
+}
+.site-header .container{
+    max-width: calc(1600px + 30px);
+    padding:0 15px;
+    margin:0 auto;
+    display: flex;
+    justify-content:space-between;
+}
+.profile{
+    position: relative;
+}
+.profile figure{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow:hidden;
+    background-color: #42b72a;
+}
+.profile figure img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.profile > div{
+    position: absolute;
+    top:100%;
+    right:0;
+    width:200px;
+    background-color: #fff;
+    padding:10px;
+    border-radius: 10px;
+}
+.profile ul{
+    list-style: none;
+    padding:0;
+}
+.profile ul li{
+    padding:7px 10px;
+}
+.profile ul li:not(:last-child){
+    border-bottom: 1px solid #f1f1f1;
+}
+.profile ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 16px;
+}
+.profile ul li figure,
+.profile ul li figure img{
+    width:30px;
+    height: 30px;
+}
+
+.status{
+    max-width: 500px;
+    padding:15px;
+    border-radius: 15px;
+    margin:15px auto;
+    background-color: #fff;
+    display: flex; 
+}
+.status figure{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%; 
+    background-color: #42b72a;
+}
+.status figure img{
+    width: 50px;
+    height: 50px;
+}
+.status-upload{
+    height: 50px;
+    margin-left:15px;
+    width: calc(100% - 65px);
+    background-color: #f0f2f5;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 20px;
+    color:gray
+}
+.status-upload-form{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    background-color: rgba(255,255,255,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.status-upload-form-wrap{
+    max-width: 320px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 15px;
+    border:1px solid #f1f1f1;
+}
+.status-upload-form .title{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    font-size: 20px;
+    border-bottom: 1px solid #f1f1f1;
+    padding:10px;
+    margin-bottom:10px;
+}
+.status-upload-form .title .close{
+    text-transform: uppercase;
+    font-size:14px;
+}
+.status-here{
+    width: 100%;
+}
+.status-here textarea{
+    padding:10px;
+    min-height:100px;
+    border:0;
+    width: 100%;
+    outline: 0;
+}
+.submit-post{
+    cursor: pointer;
+    background-color: #1877f2;
+    border: 0;
+    color: #fff;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 17px;
+    padding: 14px 16px;
+    margin-top:25px;
+}

@@ -27,7 +27,6 @@ const Header = () => {
             <div className='logo'></div>
             <div className='profile'>
                 <figure onClick={openProfileFun}>
-                    profile
                     <Image src="" alt="" width={40} height={40}/>
                 </figure>
                 {openProfile && 
